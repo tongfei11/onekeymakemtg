@@ -114,7 +114,7 @@ Download(){
 	echo -e "${Info} 开始检查编译环境！"
 	if [[ ! -e "/tmp/go/VERSION" ]]; then
 		echo -e "${Info} 开始安装编译环境！"
-		wget -N --no-check-certificate “https://golang.org/dl/go1.14.6.linux-amd64.tar.gz”
+		wget -N --no-check-certificate "https://golang.org/dl/go1.14.6.linux-amd64.tar.gz"
 		tar -xf go*linux-amd64.tar.gz && rm -f go*linux-amd64.tar.gz
 		mv go /tmp/go
 		export GOROOT=/tmp/go
